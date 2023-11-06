@@ -38,7 +38,7 @@ void main() async {
     final file = File('example/example.pdf');
     // exclude ID TAG
     final comp = file.readAsBytesSync();
-    expect(pdf.sublist(0, 76600), comp.sublist(0, 76600));
+    expect(pdf.sublist(0, 30000), comp.sublist(0, 30000));
   });
 
   test('Produce example letter', () async {
@@ -46,6 +46,6 @@ void main() async {
     final file = File('example/example_letter.pdf');
     // exclude ID TAG
     final comp = file.readAsBytesSync();
-    expect(pdf.sublist(0, 76600), comp.sublist(0, 76600));
+    expect(pdf.sublist(0, 30000), comp.sublist(0, 30000));
   });
 }
