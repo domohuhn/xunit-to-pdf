@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite id="0" name="builtin.and" package="builtin.and" tests="8" failures="3" errors="2" time="3.21" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line8_builtin.and_0" classname="example/source.dart" time="0.01"/>
+    <testcase name="Line6_builtin.and_0" classname="example/source.dart" time="0.2">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a == b || (a &lt; c || b > c || b == c)) {
+</failure>
+    </testcase>
+    <testcase name="Line29_builtin.and_0" classname="example/source2.dart" time="3.0"/>
+    <testcase name="Line31_builtin.and_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line22_builtin.and_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 22
+Original line:     } else if (y == 0.0 &amp;&amp; text != '') {
+Mutation:     } else if (y == 0.0 || text != '') {
+</failure>
+    </testcase>
+    <testcase name="Line31_builtin.and_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c || event.d || (event.f &amp;&amp; event.g)) ||
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.and_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y &lt;= 0.0 || text != '') {
+</error>
+    </testcase>
+    <testcase name="Line30_builtin.and_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 30
+Original line:         event.b &amp;&amp;
+Mutation:         event.b ||
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="1" name="builtin.or" package="builtin.or" tests="4" failures="1" errors="2" time="1.002" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.or_0" classname="example/source.dart" time="1.0"/>
+    <testcase name="Line6_builtin.or_0" classname="example/source.dart" time="0.002">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a == b &amp;&amp; (a &lt; c &amp;&amp; b > c || b == c)) {
+</error>
+    </testcase>
+    <testcase name="Line31_builtin.or_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c || event.d &amp;&amp; (event.f &amp;&amp; event.g)) &amp;&amp;
+</failure>
+    </testcase>
+    <testcase name="Line31_builtin.or_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c &amp;&amp; event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="8" name="builtin.op.eq" package="builtin.op.eq" tests="3" failures="1" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.op.eq_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a != b &amp;&amp; (a &lt; c || b > c || b == c)) {
+</failure>
+    </testcase>
+    <testcase name="Line6_builtin.op.eq_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a == b &amp;&amp; (a &lt; c || b > c || b != c)) {
+</error>
+    </testcase>
+    <testcase name="Line22_builtin.op.eq_0" classname="example/source2.dart" time="0.0"/>
+  </testsuite>
+  <testsuite id="10" name="builtin.op.leq" package="builtin.op.leq" tests="4" failures="2" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line8_builtin.op.leq_1" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line8_builtin.op.leq_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 8
+Original line:   } else if (b &lt;= 0 &amp;&amp; c > 0) {
+Mutation:   } else if (b == 0 &amp;&amp; c > 0) {
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.op.leq_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y == 0.0 &amp;&amp; text != '') {
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.op.leq_1" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y &lt; 0.0 &amp;&amp; text != '') {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="12" name="builtin.if" package="builtin.if" tests="5" failures="1" errors="2" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line8_builtin.if_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line6_builtin.if_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (!(a == b &amp;&amp; (a &lt; c || b > c || b == c))) {
+</error>
+    </testcase>
+    <testcase name="Line22_builtin.if_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line20_builtin.if_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (!(y &lt;= 0.0 &amp;&amp; text != '')) {
+</failure>
+    </testcase>
+    <testcase name="Line29_builtin.if_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 29
+Original line:     if (event.a &amp;&amp;
+        event.b &amp;&amp;
+        (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+        event.e) {
+Mutation:     if (!(event.a &amp;&amp;
+        event.b &amp;&amp;
+        (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+        event.e)) {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="14" name="builtin.logical.or_chain" package="builtin.logical.or_chain" tests="2" failures="2" errors="0" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.logical.or_chain_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a == b &amp;&amp; (a &lt; c ||!( b > c )|| b == c)) {
+</failure>
+    </testcase>
+    <testcase name="Line31_builtin.logical.or_chain_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c ||!( event.d )|| (event.f &amp;&amp; event.g)) &amp;&amp;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="15" name="builtin.logical.and_chain2" package="builtin.logical.and_chain2" tests="8" failures="3" errors="3" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line8_builtin.logical.and_chain2_1" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 8
+Original line:   } else if (b &lt;= 0 &amp;&amp; c > 0) {
+Mutation:   } else if (b &lt;= 0 &amp;&amp;!( c > 0)) {
+</failure>
+    </testcase>
+    <testcase name="Line8_builtin.logical.and_chain2_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 8
+Original line:   } else if (b &lt;= 0 &amp;&amp; c > 0) {
+Mutation:   } else if (!(b &lt;= 0 )&amp;&amp; c > 0) {
+</error>
+    </testcase>
+    <testcase name="Line22_builtin.logical.and_chain2_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line31_builtin.logical.and_chain2_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line20_builtin.logical.and_chain2_1" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y &lt;= 0.0 &amp;&amp;!( text != '')) {
+</failure>
+    </testcase>
+    <testcase name="Line31_builtin.logical.and_chain2_1" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c || event.d || (event.f &amp;&amp;!( event.g))) &amp;&amp;
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.logical.and_chain2_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (!(y &lt;= 0.0 )&amp;&amp; text != '') {
+</error>
+    </testcase>
+    <testcase name="Line22_builtin.logical.and_chain2_1" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 22
+Original line:     } else if (y == 0.0 &amp;&amp; text != '') {
+Mutation:     } else if (y == 0.0 &amp;&amp;!( text != '')) {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="17" name="builtin.if.start" package="builtin.if.start" tests="5" failures="1" errors="2" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.if.start_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line8_builtin.if.start_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 8
+Original line:   } else if (b &lt;= 0 &amp;&amp; c > 0) {
+Mutation:   } else if (!(b &lt;= 0 )&amp;&amp; c > 0) {
+</error>
+    </testcase>
+    <testcase name="Line29_builtin.if.start_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line22_builtin.if.start_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 22
+Original line:     } else if (y == 0.0 &amp;&amp; text != '') {
+Mutation:     } else if (!(y == 0.0 )&amp;&amp; text != '') {
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.if.start_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (!(y &lt;= 0.0 )&amp;&amp; text != '') {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="18" name="builtin.if.end" package="builtin.if.end" tests="6" failures="2" errors="2" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.if.end_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line8_builtin.if.end_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 8
+Original line:   } else if (b &lt;= 0 &amp;&amp; c > 0) {
+Mutation:   } else if (b &lt;= 0 &amp;&amp;!( c > 0)) {
+</failure>
+    </testcase>
+    <testcase name="Line22_builtin.if.end_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line31_builtin.if.end_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         (event.c || event.d || (event.f &amp;&amp;!( event.g))) &amp;&amp;
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.if.end_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y &lt;= 0.0 &amp;&amp;!( text != '')) {
+</error>
+    </testcase>
+    <testcase name="Line31_builtin.if.end_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 31
+Original line:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+        event.e) {
+Mutation:         (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;!(
+        event.e)) {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="19" name="builtin.logical.chain_not" package="builtin.logical.chain_not" tests="3" failures="1" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line6_builtin.logical.chain_not_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 6
+Original line:   if (a == b &amp;&amp; (a &lt; c || b > c || b == c)) {
+Mutation:   if (a == b &amp;&amp;!(a &lt; c || b > c || b == c)) {
+</error>
+    </testcase>
+    <testcase name="Line31_builtin.logical.chain_not_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line30_builtin.logical.chain_not_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 30
+Original line:         event.b &amp;&amp;
+        (event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+Mutation:         event.b &amp;&amp;!(event.c || event.d || (event.f &amp;&amp; event.g)) &amp;&amp;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="20" name="builtin.number.negative" package="builtin.number.negative" tests="4" failures="1" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line28_builtin.number.negative_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line24_builtin.number.negative_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 24
+Original line:   return poly(x, y, z, 2.0);
+Mutation:   return poly(x, y, z, -2.0);
+</failure>
+    </testcase>
+    <testcase name="Line11_builtin.number.negative_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line10_builtin.number.negative_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 10
+Original line:   double number1 = 25.0;
+Mutation:   double number1 = -25.0;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="21" name="builtin.function.arg2" package="builtin.function.arg2" tests="1" failures="0" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line32_builtin.function.arg2_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 32
+Original line:   return inner(x, y);
+Mutation:   return inner( y,x);
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="22" name="builtin.function.arg3" package="builtin.function.arg3" tests="2" failures="1" errors="0" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line28_builtin.function.arg3_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line28_builtin.function.arg3_1" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 28
+Original line:   return inner2(x, y, 1.0);
+Mutation:   return inner2(x, 1.0, y);
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="23" name="builtin.function.arg4" package="builtin.function.arg4" tests="3" failures="1" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line24_builtin.function.arg4_2" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line24_builtin.function.arg4_1" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 24
+Original line:   return poly(x, y, z, 2.0);
+Mutation:   return poly(x, z, y, 2.0);
+</failure>
+    </testcase>
+    <testcase name="Line24_builtin.function.arg4_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 24
+Original line:   return poly(x, y, z, 2.0);
+Mutation:   return poly( y,x, z, 2.0);
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="24" name="builtin.arith.add" package="builtin.arith.add" tests="4" failures="1" errors="2" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line16_builtin.arith.add_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line20_builtin.arith.add_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 20
+Original line:   return a * x * x + b * x + c;
+Mutation:   return a * x * x - b * x + c;
+</failure>
+    </testcase>
+    <testcase name="Line7_builtin.arith.add_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 7
+Original line:     return a + c;
+Mutation:     return a - c;
+</error>
+    </testcase>
+    <testcase name="Line20_builtin.arith.add_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 20
+Original line:   return a * x * x + b * x + c;
+Mutation:   return a * x * x + b * x - c;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="25" name="builtin.arith.sub" package="builtin.arith.sub" tests="1" failures="1" errors="0" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line9_builtin.arith.sub_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 9
+Original line:     return a - b;
+Mutation:     return a + b;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="26" name="builtin.arith.mul" package="builtin.arith.mul" tests="5" failures="2" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line16_builtin.arith.mul_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line20_builtin.arith.mul_0" classname="example/source.dart" time="0.0"/>
+    <testcase name="Line20_builtin.arith.mul_0" classname="example/source.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source.dart
+Line: 20
+Original line:   return a * x * x + b * x + c;
+Mutation:   return a * x * x + b / x + c;
+</failure>
+    </testcase>
+    <testcase name="Line20_builtin.arith.mul_0" classname="example/source.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source.dart
+Line: 20
+Original line:   return a * x * x + b * x + c;
+Mutation:   return a / x * x + b * x + c;
+</error>
+    </testcase>
+    <testcase name="Line15_builtin.arith.mul_0" classname="example/source2.dart" time="0.0">
+      <failure type="undetected" message="All tests passed despite changing the code!">
+File: example/source2.dart
+Line: 15
+Original line:     return number1 * x / number2;
+Mutation:     return number1 / x / number2;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="9" name="builtin.op.neq" package="builtin.op.neq" tests="2" failures="0" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line22_builtin.op.neq_0" classname="example/source2.dart" time="0.0"/>
+    <testcase name="Line20_builtin.op.neq_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 20
+Original line:     if (y &lt;= 0.0 &amp;&amp; text != '') {
+Mutation:     if (y &lt;= 0.0 &amp;&amp; text == '') {
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite id="13" name="builtin.logical.and_chain" package="builtin.logical.and_chain" tests="1" failures="0" errors="0" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line29_builtin.logical.and_chain_0" classname="example/source2.dart" time="0.0"/>
+  </testsuite>
+  <testsuite id="27" name="builtin.arith.div" package="builtin.arith.div" tests="1" failures="0" errors="1" time="0.0" timestamp="2023-06-03T15:43:06" hostname="localhost">
+    <testcase name="Line15_builtin.arith.div_0" classname="example/source2.dart" time="0.0">
+      <error type="timeout" message="The test command timed out after 0.0 s">
+File: example/source2.dart
+Line: 15
+Original line:     return number1 * x / number2;
+Mutation:     return number1 * x * number2;
+</error>
+    </testcase>
+  </testsuite>
+</testsuites>

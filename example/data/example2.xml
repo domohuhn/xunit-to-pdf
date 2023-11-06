@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="42" failures="0" disabled="0" errors="0" time="0.001" timestamp="2023-06-03T15:34:53" name="AllTests">
+  <testsuite name="MPL" tests="9" failures="0" disabled="0" errors="0" time="0" timestamp="2023-06-03T15:34:53">
+    <testcase name="AccumulateType" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="AccumulateValue" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="Conditional" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="Join" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="Filter" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="FindIf" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="IsUnique" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="MinElement" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+    <testcase name="Transform" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="MPL" />
+  </testsuite>
+  <testsuite name="Units" tests="31" failures="0" disabled="0" errors="0" time="0.001" timestamp="2023-06-03T15:34:53">
+    <testcase name="QuantityConversion" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="ConvertQuantity" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="ConvertSpeeds" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="ScaleQuantityWithScalar" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="InvertQuantity" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="TrigonometricFunctions" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="ConvertImperial" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="AddQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="SubtractQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="MultiplySameQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="MultiplyDifferentQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="DivideSameQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="DivideDifferentQuantities" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Scalar" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="OperationChain" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="DerivedUnits" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Degree" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="MinMax" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Abs" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Clamp" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Exp" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Log" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Comparisions" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="MultiplicationConversion" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="AdditonConversion" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="ChronoIntegration" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="QuantityCast" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="IntegralConversion" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Pow" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Sqrt" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+    <testcase name="Traits" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="Units" />
+  </testsuite>
+  <testsuite name="FormatUnits" tests="2" failures="0" disabled="0" errors="0" time="0" timestamp="2023-06-03T15:34:53">
+    <testcase name="Cout" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="FormatUnits" />
+    <testcase name="ToString" status="run" result="completed" time="0" timestamp="2023-06-03T15:34:53" classname="FormatUnits" />
+  </testsuite>
+</testsuites>

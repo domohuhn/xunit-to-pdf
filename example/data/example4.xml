@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Linux-c++"
+	tests="25"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="localhost"
+	time="4"
+	timestamp="2023-06-08T14:40:14"
+	>
+	<testcase name="Scenario: Brickwall lowpass filters can be initialized" classname="Scenario: Brickwall lowpass filters can be initialized" time="0.160859" status="run">
+		<system-out>Filters: Scenario: Brickwall lowpass filters can be initialized
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Brickwall highpass filters can be initialized" classname="Scenario: Brickwall highpass filters can be initialized" time="0.165097" status="run">
+		<system-out>Filters: Scenario: Brickwall highpass filters can be initialized
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Brickwall bandstop filters can be initialized" classname="Scenario: Brickwall bandstop filters can be initialized" time="0.168338" status="run">
+		<system-out>Filters: Scenario: Brickwall bandstop filters can be initialized
+===============================================================================
+All tests passed (35 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Brickwall bandpass filters can be initialized" classname="Scenario: Brickwall bandpass filters can be initialized" time="0.166299" status="run">
+		<system-out>Filters: Scenario: Brickwall bandpass filters can be initialized
+===============================================================================
+All tests passed (55 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Butterworth output coefficients can be computed" classname="Scenario: Butterworth output coefficients can be computed" time="0.163572" status="run">
+		<system-out>Filters: Scenario: Butterworth output coefficients can be computed
+===============================================================================
+All tests passed (16 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Butterworth lowpass filters can be initialized" classname="Scenario: Butterworth lowpass filters can be initialized" time="0.169467" status="run">
+		<system-out>Filters: Scenario: Butterworth lowpass filters can be initialized
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Butterworth highpass filters can be initialized" classname="Scenario: Butterworth highpass filters can be initialized" time="0.163011" status="run">
+		<system-out>Filters: Scenario: Butterworth highpass filters can be initialized
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Butterworth bandstop filters can be initialized" classname="Scenario: Butterworth bandstop filters can be initialized" time="0.164402" status="run">
+		<system-out>Filters: Scenario: Butterworth bandstop filters can be initialized
+===============================================================================
+All tests passed (23 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Butterworth bandpass filters can be initialized" classname="Scenario: Butterworth bandpass filters can be initialized" time="0.15899" status="run">
+		<system-out>Filters: Scenario: Butterworth bandpass filters can be initialized
+===============================================================================
+All tests passed (23 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev output coefficients can be computed" classname="Scenario: Chebyshev output coefficients can be computed" time="0.154032" status="run">
+		<system-out>Filters: Scenario: Chebyshev output coefficients can be computed
+===============================================================================
+All tests passed (49 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev low pass filters are correctly initialized" classname="Scenario: Chebyshev low pass filters are correctly initialized" time="0.159966" status="run">
+		<system-out>Filters: Scenario: Chebyshev low pass filters are correctly initialized
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev high pass filters are correctly initialized" classname="Scenario: Chebyshev high pass filters are correctly initialized" time="0.160815" status="run">
+		<system-out>Filters: Scenario: Chebyshev high pass filters are correctly initialized
+===============================================================================
+All tests passed (23 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev band pass filters are correctly initialized" classname="Scenario: Chebyshev band pass filters are correctly initialized" time="0.163537" status="run">
+		<system-out>Filters: Scenario: Chebyshev band pass filters are correctly initialized
+===============================================================================
+All tests passed (22 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev band stop filters are correctly initialized" classname="Scenario: Chebyshev band stop filters are correctly initialized" time="0.168779" status="run">
+		<system-out>Filters: Scenario: Chebyshev band stop filters are correctly initialized
+===============================================================================
+All tests passed (22 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Chebyshev type 2 design" classname="Scenario: Chebyshev type 2 design" time="0.167897" status="run">
+		<system-out>Filters: Scenario: Chebyshev type 2 design
+===============================================================================
+All tests passed (48 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: A moving average filter can be created" classname="Scenario: A moving average filter can be created" time="0.16205" status="run">
+		<system-out>Filters: Scenario: A moving average filter can be created
+===============================================================================
+All tests passed (36 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: A moving average filter can be used" classname="Scenario: A moving average filter can be used" time="0.164165" status="run">
+		<system-out>Filters: Scenario: A moving average filter can be used
+===============================================================================
+All tests passed (16 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: A moving average highpass filter can be used" classname="Scenario: A moving average highpass filter can be used" time="0.164049" status="run">
+		<system-out>Filters: Scenario: A moving average highpass filter can be used
+===============================================================================
+All tests passed (40 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: An buttwerworth lowpass filter generated on the webpage can be used" classname="Scenario: An buttwerworth lowpass filter generated on the webpage can be used" time="0.161313" status="run">
+		<system-out>Filters: Scenario: An buttwerworth lowpass filter generated on the webpage can be used
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: The coefficients are used in correct order" classname="Scenario: The coefficients are used in correct order" time="0.166448" status="run">
+		<system-out>Filters: Scenario: The coefficients are used in correct order
+===============================================================================
+All tests passed (27 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: An FIR exponential lowpass filter can be used" classname="Scenario: An FIR exponential lowpass filter can be used" time="0.161761" status="run">
+		<system-out>Filters: Scenario: An FIR exponential lowpass filter can be used
+===============================================================================
+All tests passed (32 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: An IIR exponential lowpass filter can be used" classname="Scenario: An IIR exponential lowpass filter can be used" time="0.146226" status="run">
+		<system-out>Filters: Scenario: An IIR exponential lowpass filter can be used
+===============================================================================
+All tests passed (27 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: S-plane pole coefficients can be computed" classname="Scenario: S-plane pole coefficients can be computed" time="0.163888" status="run">
+		<system-out>Filters: Scenario: S-plane pole coefficients can be computed
+===============================================================================
+All tests passed (14 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: Convolution of parameters" classname="Scenario: Convolution of parameters" time="0.161408" status="run">
+		<system-out>Filters: Scenario: Convolution of parameters
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+	<testcase name="Scenario: The cpp bindings can be used" classname="Scenario: The cpp bindings can be used" time="0.159861" status="run">
+		<system-out>Filters: Scenario: The cpp bindings can be used
+===============================================================================
+All tests passed (8 assertions in 1 test case)
+
+</system-out>
+	</testcase>
+</testsuite>

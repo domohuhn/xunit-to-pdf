@@ -1,0 +1,17 @@
+name: xunit_to_pdf
+description: A command-line application converting xunit xml documents to pdf.
+version: 1.0.0
+repository: https://github.com/domohuhn/xunit-to-pdf
+issue_tracker: https://github.com/domohuhn/xunit-to-pdf/issues
+
+environment:
+  sdk: ^3.0.3
+
+dependencies:
+  args: ^2.3.0
+  xml: ^6.0.0
+  pdf: ^3.10.4
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.21.0
