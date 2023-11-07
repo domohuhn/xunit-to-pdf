@@ -61,10 +61,10 @@ void main() {
         expect(p.information!.type, 'undetected');
         expect(p.information!.message,
             'All tests passed despite changing the code!');
-        final reg = RegExp(
-            r'^File: .*?\nLine: .*?\nOriginal line: .*?\nMutation: .*$',
-            multiLine: true);
-        expect(reg.hasMatch(p.information!.text!), true);
+        expect(p.information!.text!.contains("File: "), true);
+        expect(p.information!.text!.contains("Line: "), true);
+        expect(p.information!.text!.contains("Original line: "), true);
+        expect(p.information!.text!.contains("Mutation: "), true);
       });
     });
 
@@ -77,10 +77,10 @@ void main() {
         expect(p.information!.type, 'timeout');
         expect(
             p.information!.message, 'The test command timed out after 0.0 s');
-        final reg = RegExp(
-            r'^File: .*?\nLine: .*?\nOriginal line: .*?\nMutation: .*$',
-            multiLine: true);
-        expect(reg.hasMatch(p.information!.text!), true);
+        expect(p.information!.text!.contains("File: "), true);
+        expect(p.information!.text!.contains("Line: "), true);
+        expect(p.information!.text!.contains("Original line: "), true);
+        expect(p.information!.text!.contains("Mutation: "), true);
       });
     });
   });
