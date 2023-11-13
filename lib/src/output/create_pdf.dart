@@ -124,6 +124,12 @@ class _NumberDisplay extends pw.StatelessWidget {
   }
 }
 
+/// Generates the report page for a test [suite] parsed from [filename].
+///
+/// A page comprises a title, an info box with a pie chart and the [testType].
+/// A list of test cases as bullet points is added below.
+///
+/// [pageFormat] determines the dimensions of the page in the pdf document.
 pw.Page generateTestSuiteReport(Report data, String testType, String filename,
     TestSuite suite, PdfPageFormat pageFormat) {
   final theme = pw.ThemeData.base();
@@ -161,6 +167,13 @@ pw.Page generateTestSuiteReport(Report data, String testType, String filename,
   return createPage(data, theme, pageFormat, childList);
 }
 
+/// Generates the title page of the report.
+///
+/// The page comprises a title, an info box with a pie chart and
+/// a list of test types with all test suites listed as bullet points.
+/// At the bottom of the page is a footer with the title, version and date.
+///
+/// [pageFormat] determines the dimensions of the page in the pdf document.
 pw.Page generateTitlePage(Report data, PdfPageFormat pageFormat) {
   final theme = pw.ThemeData.base();
   final childList = <pw.Widget>[
@@ -197,7 +210,13 @@ pw.Page generateTitlePage(Report data, PdfPageFormat pageFormat) {
   return createPage(data, theme, pageFormat, childList);
 }
 
-/// Generates the report page for a test type (e.g. Unit tests)
+/// Generates the overview page for a test [type] (e.g. Unit tests).
+///
+/// A page comprises a title, an info box with a pie chart and
+/// a list of test suites as bullet points.
+/// At the bottom of the page is a footer with the title, version and date.
+///
+/// [pageFormat] determines the dimensions of the page in the pdf document.
 pw.Page generateTestTypePage(
     Report data, TestTypes type, PdfPageFormat pageFormat) {
   final theme = pw.ThemeData.base();
@@ -239,6 +258,11 @@ pw.Page generateTestTypePage(
   return createPage(data, theme, pageFormat, childList);
 }
 
+/// Creates a pdf file from the report [data] using the given [pageFormat].
+///
+/// The return value contains the binary representation of the pdf document.
+/// You can write every byte of the returned list to disk to save the pdf document
+/// for later.
 Future<Uint8List> generateReport(Report data, PdfPageFormat pageFormat) async {
   final document = pw.Document();
 

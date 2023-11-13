@@ -3,7 +3,6 @@
 
 import 'dart:io';
 
-import 'package:xunit_to_pdf/src/core/test_types.dart';
 import 'package:xunit_to_pdf/xunit_to_pdf.dart';
 import 'package:args/args.dart';
 

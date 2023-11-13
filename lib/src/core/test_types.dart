@@ -3,16 +3,31 @@
 
 /// Types of tests recognized by the writer
 enum TestTypes {
+  /// unit-tests. Typically the most specific test cases.
   unit,
+
+  /// integration-tests. Uses multiple units or components.
   integration,
+
+  /// qualification-tests. verifies that the project requirements are met.
+  /// Uses the actual binary of the software.
   qualification,
   functional,
+
+  /// System tests. Verifies that the the whole system (hardware and software)
+  /// works.
   system,
+
+  /// Verifies that random mutations of the software are detected.
   mutation,
   endToEnd,
+
+  /// Tests the performance of the software.
   performance,
   smoke,
   acceptance,
+
+  /// Verifies that the software can handle random inputs.
   fuzz,
   custom
 }
@@ -50,6 +65,7 @@ String testTypeToReportString(TestTypes t) {
   return "${_testTypeToReportString(t)} Tests";
 }
 
+/// A list of all test types to iterate
 const List<TestTypes> testTypeList = [
   TestTypes.unit,
   TestTypes.integration,

@@ -8,6 +8,12 @@ import 'package:xunit_to_pdf/src/core/test_types.dart';
 import 'package:xunit_to_pdf/src/output/create_pdf.dart';
 import 'package:xunit_to_pdf/src/parse/parse_xunit.dart';
 
+export 'package:xunit_to_pdf/src/core/test_types.dart';
+
+/// A class that handles the full conversion process.
+///
+/// Create an instance of the converter, add the paths
+/// to all files you want to parse, then
 class ConversionContext {
   String title;
   String version;
@@ -15,6 +21,7 @@ class ConversionContext {
 
   List<(TestTypes, String)> inputs = [];
 
+  /// Creates the report
   ConversionContext(
       {required this.title,
       required this.version,
@@ -25,11 +32,11 @@ class ConversionContext {
 
   DateTime get timestamp => _timestamp;
 
-  /// Adds an input file to the conversion list.
+  /// Adds an input file [path] to the conversion list.
   /// In the generated report, the test cases read from the file will be added to the category
-  /// given vie [type].
-  void addInput(TestTypes type, String filename) {
-    inputs.add((type, filename));
+  /// given via [type].
+  void addInput(TestTypes type, String path) {
+    inputs.add((type, path));
   }
 
   /// Reads all XUnit files given via the addInput() method and creates

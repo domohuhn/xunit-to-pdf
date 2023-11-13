@@ -3,6 +3,7 @@
 
 import 'package:xunit_to_pdf/src/core/parse_error.dart';
 
+/// Status of a test case
 enum TestResult {
   /// Test completed
   passed,
